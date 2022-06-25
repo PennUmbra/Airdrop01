@@ -1,14 +1,10 @@
 const{
-    Connection,
-    Publickey,
-    clusterApiUrl,
     Keypair,
-    LAMPORT_PER_SOL
 } = require("@solana/web3.js")
 const wallet = new Keypair()
 
-const publickey = wallet._keypair.publickey
-const secretkey = wallet._keypair.secretkey
+const publicKey = wallet._keypair.publicKey
+const secretKey = wallet._keypair.secretKey
 
-console.log(publickey)
-console.log(secretkey)
+console.log(publicKey)
+console.log(secretKey)
